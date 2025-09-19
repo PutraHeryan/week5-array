@@ -1,14 +1,16 @@
-Identitas
+IDENTITAS
 
 Nama: Putra Heryan Gagah Perkasa
 
 NIM: F1D022087
 
-Deskripsi Tugas
+DESKRIPSI TUGAS
+
 Tugas ini adalah tugas penerapan enam metode array  pada JavaScript, yaitu: map(), filter(), reduce(), find(), some(), dan every().
 berikut adalah penerapan metode tersebut pada array bertemakan makanan
 
-Implementasi
+IMPLEMENTASI
+
 1. map()
    Tujuan: Mengubah semua nama menjadi italic
    <img width="1360" height="213" alt="image" src="https://github.com/user-attachments/assets/6d8d5216-bc3c-47fc-b1eb-e55533d79a45" />
@@ -28,7 +30,7 @@ Implementasi
    Tujuan: Mengecek apakah semua nama menggunakan huruf kecil
    <img width="702" height="280" alt="image" src="https://github.com/user-attachments/assets/70aba574-44ca-4ac0-a8a1-5cd113f5a890" />
 
-Kesimpulan
+KESIMPULAN
 
 Berdasarkan percobaan di atas, dapat disimpulkan bahwa:
 - metode map() digunakan untuk mengubah setiap elemen dalam array menjadi sesuatu yang baru
