@@ -43,11 +43,11 @@ function main() {
 
     console.log("===== Pilih Metode Array yang Ingin Digunakan =====");
     console.log("1. Ubah setiap nama menjadi italic (map)");
-    console.log("2. Filter nama yang mengandung 'goreng' (filter)");
+    console.log("2. Filter kata yang mengandung 'goreng' (filter)");
     console.log("3. Hitung jumlah kata 'ayam' (reduce)");
-    console.log("4. Cari nama pertama dengan huruf 's' (find)");
-    console.log("5. Cek apakah ada nama < 6 huruf (some)");
-    console.log("6. Cek apakah semua nama huruf kecil (every)");
+    console.log("4. Cari nama dengan huruf pertama 's' (find)");
+    console.log("5. Cek apakah ada namayang memiliki < 6 huruf (some)");
+    console.log("6. Cek apakah semua nama menggunakan huruf kecil (every)");
     console.log("==================================================");
 
     rl.question('Masukkan pilihan Anda (1-6): ', (pilihan) => {
@@ -64,10 +64,10 @@ function main() {
                 break;
             case '4':
                 const ditemukan = carinamaDenganHurufS();
-                hasil = `nama pertama yang ditemukan dengan huruf 's': ${ditemukan || 'Tidak ada'}`;
+                hasil = `nama yang ditemukan dengan huruf pertama 's': ${ditemukan || 'Tidak ada'}`;
                 break;
             case '5':
-                hasil = `Apakah ada nama < 6 huruf? ${cekPanjangKurangDariEnam()}`;
+                hasil = `Apakah ada nama yang memiliki < 6 huruf? ${cekPanjangKurangDariEnam()}`;
                 break;
             case '6':
                 hasil = `Apakah semua nama menggunakan huruf kecil? ${cekSemuaHurufKecil()}`;
