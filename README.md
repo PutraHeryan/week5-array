@@ -1,4 +1,5 @@
 Identitas
+
 Nama: Putra Heryan Gagah Perkasa
 NIM: F1D022087
 
@@ -27,6 +28,7 @@ Implementasi
    <img width="702" height="280" alt="image" src="https://github.com/user-attachments/assets/70aba574-44ca-4ac0-a8a1-5cd113f5a890" />
 
 Kesimpulan
+
 Berdasarkan percobaan di atas, dapat disimpulkan bahwa:
 - metode map() digunakan untuk mengubah setiap elemen dalam array menjadi sesuatu yang baru
 - metode filter() digunakan untuk menyaring atau memilih elemen yang memenuhi kondisi tertentu
