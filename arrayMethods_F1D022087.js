@@ -6,8 +6,8 @@ const daftarMakanan = [
     'sayur sop', 'cilok', 'ayam bakar'
 ];
 
-function acakArray() {
-    return daftarMakanan.slice().sort(() => Math.random() - 0.5);
+function ubahKeItalic() {
+    return daftarMakanan.map(makanan => `*${makanan}*`);
 }
 
 function filterGorengan() {
@@ -42,7 +42,7 @@ function main() {
     });
 
     console.log("===== Pilih Metode Array yang Ingin Digunakan =====");
-    console.log("1. Acak Posisi Array (sort)");
+    console.log("1. Ubah setiap elemen menjadi italic (map)");
     console.log("2. Filter nama yang mengandung 'goreng' (filter)");
     console.log("3. Hitung jumlah kata 'ayam' (reduce)");
     console.log("4. Cari elemen pertama dengan huruf 's' (find)");
@@ -54,7 +54,7 @@ function main() {
         let hasil;
         switch (pilihan) {
             case '1':
-                hasil = `Hasil acak: ${acakArray().join(', ')}`;
+                hasil = `Hasil map (italic): ${ubahKeItalic().join(', ')}`;
                 break;
             case '2':
                 hasil = `Hasil filter 'goreng': ${filterGorengan().join(', ')}`;
