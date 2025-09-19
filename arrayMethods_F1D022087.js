@@ -23,7 +23,7 @@ function hitungKataAyam() {
     }, 0);
 }
 
-function carinamaDenganHurufS() {
+function cariNamaDenganHurufS() { 
     return daftarMakanan.find(makanan => makanan.includes('s'));
 }
 
@@ -45,8 +45,8 @@ function main() {
     console.log("1. Ubah setiap nama menjadi italic (map)");
     console.log("2. Filter kata yang mengandung 'goreng' (filter)");
     console.log("3. Hitung jumlah kata 'ayam' (reduce)");
-    console.log("4. Cari nama dengan huruf pertama 's' (find)");
-    console.log("5. Cek apakah ada namayang memiliki < 6 huruf (some)");
+    console.log("4. Cari nama dengan huruf 's' (find)");
+    console.log("5. Cek apakah ada nama yang memiliki < 6 huruf (some)");
     console.log("6. Cek apakah semua nama menggunakan huruf kecil (every)");
     console.log("==================================================");
 
@@ -63,14 +63,18 @@ function main() {
                 hasil = `Jumlah kata 'ayam' dalam array: ${hitungKataAyam()}`;
                 break;
             case '4':
-                const ditemukan = carinamaDenganHurufS();
-                hasil = `nama yang ditemukan dengan huruf pertama 's': ${ditemukan || 'Tidak ada'}`;
+                const ditemukan = cariNamaDenganHurufS(); 
+                hasil = `Nama yang ditemukan dengan huruf 's': ${ditemukan || 'Tidak ada'}`;
                 break;
             case '5':
-                hasil = `Apakah ada nama yang memiliki < 6 huruf? ${cekPanjangKurangDariEnam()}`;
+                hasil = cekPanjangKurangDariEnam() 
+                    ? "Iya, ada nama yang memiliki huruf < 6" 
+                    : "Tidak, tidak ada nama yang memiliki huruf < 6";
                 break;
             case '6':
-                hasil = `Apakah semua nama menggunakan huruf kecil? ${cekSemuaHurufKecil()}`;
+                hasil = cekSemuaHurufKecil()
+                    ? "Iya, semua nama menggunakan huruf kecil"
+                    : "Tidak, tidak semua nama menggunakan huruf kecil";
                 break;
             default:
                 hasil = "Pilihan tidak valid. Silakan masukkan angka antara 1 sampai 6.";
