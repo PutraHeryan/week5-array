@@ -1,10 +1,10 @@
-*IDENTITAS
+IDENTITAS
 
 Nama: Putra Heryan Gagah Perkasa
 
 NIM: F1D022087
 
-**DESKRIPSI TUGAS
+DESKRIPSI TUGAS
 
 Tugas ini adalah tugas penerapan enam metode array  pada JavaScript, yaitu: map(), filter(), reduce(), find(), some(), dan every().
 berikut adalah penerapan metode tersebut pada array bertemakan makanan
